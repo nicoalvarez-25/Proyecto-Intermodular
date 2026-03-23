@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="transform.xsl" type="text/xsl"?>
+<!DOCTYPE empresa_vending SYSTEM "modelo.dtd">
+
+<empresa_vending>
+
+    <empleados>
+        <empleado id_empleado="EMP_01">
+            <nombre>Javier López</nombre>
+            <edad>35</edad>
+            <puesto>Reponedor</puesto>
+            <sueldo>1300€</sueldo>
+        </empleado>
+        <empleado id_empleado="EMP_02">
+            <nombre>Amancio Lama</nombre>
+            <edad>45</edad>
+            <puesto>Administrativo</puesto>
+            <sueldo>1400€</sueldo>
+        </empleado>
+        <empleado id_empleado="EMP_03">
+            <nombre>Guillermo Díaz</nombre>
+            <edad>55</edad>
+            <puesto>Técnico</puesto>
+            <sueldo>1650€</sueldo>
+        </empleado>
+    </empleados>
+
+    <clientes>
+        <cliente id_cliente="CLI_001">
+            <nombre_cliente>Albergue San Antonio</nombre_cliente>
+            <direccion>Calle Azucena 25, Portomarín, Lugo</direccion>
+            <numero_maquinas>1</numero_maquinas>
+            <facturacion_media>350€</facturacion_media>
+        </cliente>
+        <cliente id_cliente="CLI_002">
+            <nombre_cliente>Talleres López</nombre_cliente>
+            <direccion>Calle Panaderos 14, Polígono del Ceao, Lugo</direccion>
+            <numero_maquinas>1</numero_maquinas>
+            <facturacion_media>600€</facturacion_media>
+        </cliente>
+        <cliente id_cliente="CLI_003">
+            <nombre_cliente>Norvento Enerxía</nombre_cliente>
+            <direccion>Calle Ramón María 7, Polígono de As Gandaras, Lugo</direccion>
+            <numero_maquinas>2</numero_maquinas>
+            <facturacion_media>1300€</facturacion_media>
+        </cliente>
+    </clientes>
+
+    <maquinas>
+        <maquina id_maquina="MAQ_101" cliente_ref="CLI_001">
+            <tipo>Cafetera</tipo>
+            <marca>Necta</marca>
+            <modelo>Barista 200</modelo>
+            <año>2020</año>
+            <num_serie>NE-20200509</num_serie>
+        </maquina>
+        <maquina id_maquina="MAQ_102" cliente_ref="CLI_002">
+            <tipo>Cafetera</tipo>
+            <marca>Gaggia</marca>
+            <modelo>Krea G300</modelo>
+            <año>2025</año>
+            <num_serie>GA-20251214</num_serie>
+        </maquina>
+        <maquina id_maquina="MAQ_103" cliente_ref="CLI_003">
+            <tipo>Cafetera</tipo>
+            <marca>Necta</marca>
+            <modelo>Barista 1000 Touch</modelo>
+            <año>2026</año>
+            <num_serie>NE-20260125</num_serie>
+        </maquina>
+          <maquina id_maquina="MAQ_104" cliente_ref="CLI_003">
+            <tipo>Expendedora</tipo>
+            <marca>Necta</marca>
+            <modelo>Gusto 8 Pro Touch</modelo>
+            <año>2024</año>
+            <num_serie>NE-20241220</num_serie>
+            <!-- <ubicacion>Norvento Enerxía</ubicacion> -->
+        </maquina>
+    </maquinas>
+
+    <recambios>
+        <recambio id_recambio="REC_001">
+            <pieza>Monedero</pieza>
+            <marca>NRI</marca>
+            <num_referencia>NR-202510</num_referencia>
+            <precio>300€</precio>
+        </recambio>
+        <recambio id_recambio="REC_002">
+            <pieza>Grupo de café</pieza>
+            <marca>Necta</marca>
+            <num_referencia>NE-202412</num_referencia>
+            <precio>200€</precio>
+        </recambio>
+        <recambio id_recambio="REC_003">
+            <pieza>Billetero</pieza>
+            <marca>Coges</marca>
+            <num_referencia>CG-202505</num_referencia>
+            <precio>250€</precio>
+        </recambio>
+    </recambios>
+
+
+
+</empresa_vending>

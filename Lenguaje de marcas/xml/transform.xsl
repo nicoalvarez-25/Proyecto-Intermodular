@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+
+    <html>
+        <style>
+
+            * {
+                font-family: Arial, sans-serif;
+                background-color: #C7E6F0;
+            }
+
+            h1 {
+                color: #4A5B8F;
+            }
+
+            h2 {
+                color: #4A5B8F;
+                
+            }
+            
+            head {
+                color: orange;
+            }
+
+            table {
+                width: 60%;
+                margin: 0 auto;
+                
+                border: 5px #C7E6F0;
+                border-radius: 5px;
+            }
+
+            td {
+                background-color: white; 
+                text-align: center;
+                padding: 10px;
+            }
+
+            th {
+                background-color: #F79F72;
+                text-align: center;
+                padding: 7px;
+            }
+
+        </style>
+
+         <body>  
+            <h1>Mi empresa de vending</h1>
+            <h2>Empleados</h2>
+            <table border="0">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Puesto</th>
+                    <th>Sueldo</th>
+                </tr>
+
+                <xsl:for-each select="empresa_vending/empleados/empleado">
+
+                <tr>
+                    <td><xsl:value-of select="nombre"/></td>
+                    <td><xsl:value-of select="edad"/></td>
+                    <td><xsl:value-of select="puesto"/></td>
+                    <td><xsl:value-of select="sueldo"/></td>
+
+                </tr>
+                </xsl:for-each>
+
+            </table>
+
+            <h2>Clientes</h2>
+            <table border="0">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Direccion</th>
+                    <th>Nº de máquinas</th>
+                    <th>Facturacion media</th>
+                </tr>
+
+                <xsl:for-each select="empresa_vending/clientes/cliente">
+
+                <tr>
+                    <td><xsl:value-of select="nombre_cliente"/></td>
+                    <td><xsl:value-of select="direccion"/></td>
+                    <td><xsl:value-of select="numero_maquinas"/></td>
+                    <td><xsl:value-of select="facturacion_media"/></td>
+
+                </tr>
+                
+                </xsl:for-each> 
+            </table>
+
+            <h2>Máquinas en propiedad</h2>
+            <table border="0">
+                <tr>
+                    <th>Tipo</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Año</th>
+                    <th>Número de serie</th>
+                </tr>
+
+                <xsl:for-each select="empresa_vending/maquinas/maquina">
+                <tr>
+                    <td><xsl:value-of select="tipo"/></td>
+                    <td><xsl:value-of select="marca"/></td>
+                    <td><xsl:value-of select="modelo"/></td>
+                    <td><xsl:value-of select="año"/></td>
+                    <td><xsl:value-of select="num_serie"/></td>
+                </tr>
+                </xsl:for-each>
+            </table>
+
+            <h2>Recambios</h2>
+            <table border="0">
+                <tr>
+                    <th>Pieza</th>
+                    <th>Marca</th>
+                    <th>Número de referencia</th>
+                    <th>Precio</th>
+                </tr>
+
+                <xsl:for-each select="empresa_vending/recambios/recambio">
+                <tr>
+                    <td><xsl:value-of select="pieza"/></td>
+                    <td><xsl:value-of select="marca"/></td>
+                    <td><xsl:value-of select="num_referencia"/></td>
+                    <td><xsl:value-of select="precio"/></td>
+                </tr>
+                </xsl:for-each>
+            </table>
+
+        </body>
+
+    </html>
+
+</xsl:template>
+</xsl:stylesheet>

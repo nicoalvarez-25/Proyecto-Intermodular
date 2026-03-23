@@ -1,0 +1,38 @@
+<!ELEMENT empresa_vending (empleados, clientes, maquinas, recambios)>
+
+<!ELEMENT empleados (empleado+)>
+<!ELEMENT empleado (nombre, edad, puesto, sueldo)>
+<!ATTLIST empleado id_empleado ID #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT puesto (#PCDATA)>
+<!ELEMENT sueldo (#PCDATA)>
+
+<!ELEMENT clientes (cliente+)>
+<!ELEMENT cliente (nombre_cliente, direccion, numero_maquinas, facturacion_media)>
+<!ATTLIST cliente id_cliente ID #REQUIRED>
+
+<!ELEMENT nombre_cliente (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT numero_maquinas (#PCDATA)>
+<!ELEMENT facturacion_media (#PCDATA)>
+
+<!ELEMENT maquinas (maquina+)>
+<!ELEMENT maquina (tipo, marca, modelo, año, num_serie)>
+<!ATTLIST maquina id_maquina ID #REQUIRED cliente_ref IDREF #REQUIRED>
+
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
+<!ELEMENT num_serie (#PCDATA)>
+
+<!ELEMENT recambios (recambio+)>
+<!ELEMENT recambio (pieza, marca, num_referencia, precio)>
+<!ATTLIST recambio id_recambio ID #REQUIRED>
+
+<!ELEMENT pieza (#PCDATA)>
+<!ELEMENT num_referencia (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+
+<!ELEMENT marca (#PCDATA)>
