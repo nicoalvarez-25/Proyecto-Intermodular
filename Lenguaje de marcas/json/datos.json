@@ -1,0 +1,60 @@
+{
+    "empresa_vending": {
+      "empleados": [
+        {
+            "id_empleado": "EMP_01" ,
+            "nombre": "Javier López",
+            "edad": "35",
+            "puesto": "Reponedor" ,
+            "sueldo": "1300€"
+        },
+
+        {
+            "id_empleado": "EMP_02",
+            "nombre": "Amancio Lama",
+            "edad": "45",
+            "puesto": "Administrativo",
+            "sueldo": "1400€"
+        },
+
+        {
+            "id_empleado": "EMP_03",
+            "nombre": "Guillermo Díaz",
+            "edad": "55",
+            "puesto": "Técnico",
+            "sueldo": "1650€"
+        }
+    ],  
+
+        "clientes": [
+            {
+                "id_cliente": "" ,
+                "nombre": "" ,
+                "dirección": "" ,
+                "numero_maquinas": "" ,
+                "facturacion_media": "" 
+            },
+
+             {
+                "id_cliente": "" ,
+                "nombre": "" ,
+                "dirección": "" ,
+                "numero_maquinas": "" ,
+                "facturacion_media": "" 
+            },
+
+             {
+                "id_cliente": "" ,
+                "nombre": "" ,
+                "dirección": "" ,
+                "numero_maquinas": "" ,
+                "facturacion_media": "" 
+            }
+        ]
+
+
+
+
+    }
+    
+}

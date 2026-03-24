@@ -3,49 +3,13 @@
 <xsl:template match="/">
 
     <html>
-        <style>
 
-            * {
-                font-family: Arial, sans-serif;
-                background-color: #C7E6F0;
-            }
+        <head>
+            <link rel="stylesheet" href="../css/estilo.css"/>
+        </head>
 
-            h1 {
-                color: #4A5B8F;
-            }
+        <body> 
 
-            h2 {
-                color: #4A5B8F;
-                
-            }
-            
-            head {
-                color: orange;
-            }
-
-            table {
-                width: 60%;
-                margin: 0 auto;
-                
-                border: 5px #C7E6F0;
-                border-radius: 5px;
-            }
-
-            td {
-                background-color: white; 
-                text-align: center;
-                padding: 10px;
-            }
-
-            th {
-                background-color: #F79F72;
-                text-align: center;
-                padding: 7px;
-            }
-
-        </style>
-
-         <body>  
             <h1>Mi empresa de vending</h1>
             <h2>Empleados</h2>
             <table border="0">
@@ -57,7 +21,6 @@
                 </tr>
 
                 <xsl:for-each select="empresa_vending/empleados/empleado">
-
                 <tr>
                     <td><xsl:value-of select="nombre"/></td>
                     <td><xsl:value-of select="edad"/></td>
@@ -79,15 +42,12 @@
                 </tr>
 
                 <xsl:for-each select="empresa_vending/clientes/cliente">
-
                 <tr>
                     <td><xsl:value-of select="nombre_cliente"/></td>
                     <td><xsl:value-of select="direccion"/></td>
                     <td><xsl:value-of select="numero_maquinas"/></td>
                     <td><xsl:value-of select="facturacion_media"/></td>
-
                 </tr>
-                
                 </xsl:for-each> 
             </table>
 
@@ -130,7 +90,7 @@
                 </tr>
                 </xsl:for-each>
             </table>
-
+           
         </body>
 
     </html>
