@@ -1,33 +1,48 @@
 
             * {
                 font-family: Arial, sans-serif;
-                background-color: #C7E6F0;
+                box-sizing: border-box;
             }
 
-            h1, h2 {
-                color: #4A5B8F;
-                width: 60%;
-                margin: 10px auto;
+            body {
+                background-color: #C7E6F0;
+                margin: 0;
+                padding: 20px;
+            }
+
+            body > div {
+                background-color: rgb(247, 248, 250);
+                width: 90%;
+                max-width: 1300px;
+                margin: 0 auto;
+                border-radius: 10px;
+                padding: 30px;
+                box-shadow: 2px 5px 20px rgb(182, 180, 180) ;
             }
 
             h1 {
-                margin-top: 20px;
+                color: #4A5B8F;
+                background-color: #F79F72;
+                padding: 15px;
+                margin-top: 0;
             }
 
             h2 {
-                /* color: #4A5B8F; */
+                color: #4A5B8F;
+                background-color: #C7E6F0;
                 margin-top: 40px;
-                
+                padding: 10px;
             }
             
-            head {
-                color: orange;
+            .tabla {
+                width: 100%;
+                overflow-x: auto;
+                margin-bottom: 20px;
             }
 
             table {
-                width: 60%;
-                margin: 10px auto;
-                
+                width: 100%;
+                margin-top: 10px;
                 border: 5px #C7E6F0;
                 border-radius: 5px;
             }
@@ -36,12 +51,14 @@
                 background-color: white; 
                 text-align: center;
                 padding: 10px;
+                border: 1px solid #C7E6F0;
+
             }
 
             th {
                 background-color: #F79F72;
                 text-align: center;
                 padding: 7px;
+                border: 1px solid #C7E6F0;
             }
-
          

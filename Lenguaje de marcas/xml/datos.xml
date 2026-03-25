@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="transform.xsl" type="text/xsl"?>
-<!DOCTYPE empresa_vending SYSTEM "modelo.dtd">
+<!DOCTYPE VendinGal SYSTEM "modelo.dtd">
 
-<empresa_vending>
+<VendinGal>
 
     <empleados>
         <empleado id_empleado="EMP_01">
@@ -101,4 +101,4 @@
 
 
 
-</empresa_vending>
+</VendinGal>

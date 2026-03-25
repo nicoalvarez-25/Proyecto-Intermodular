@@ -1,4 +1,4 @@
-<!ELEMENT empresa_vending (empleados, clientes, maquinas_propiedad, recambios)>
+<!ELEMENT VendinGal (empleados, clientes, maquinas_propiedad, recambios)>
 
 <!ELEMENT empleados (empleado+)>
 <!ELEMENT empleado (nombre, edad, puesto, sueldo)>

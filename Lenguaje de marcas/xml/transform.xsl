@@ -10,8 +10,12 @@
 
         <body> 
 
-            <h1>Mi empresa de vending</h1>
+            <div>
+            <h1>VendinGal</h1>
+           
             <h2>Empleados</h2>
+
+            <div class="tabla">
             <table border="0">
                 <tr>
                     <th>Nombre</th>
@@ -20,7 +24,7 @@
                     <th>Sueldo</th>
                 </tr>
 
-                <xsl:for-each select="empresa_vending/empleados/empleado">
+                <xsl:for-each select="VendinGal/empleados/empleado">
                 <tr>
                     <td><xsl:value-of select="nombre"/></td>
                     <td><xsl:value-of select="edad"/></td>
@@ -29,10 +33,11 @@
 
                 </tr>
                 </xsl:for-each>
-
             </table>
+            </div>
 
             <h2>Clientes</h2>
+            <div class="tabla">
             <table border="0">
                 <tr>
                     <th>Nombre</th>
@@ -41,7 +46,7 @@
                     <th>Facturacion media</th>
                 </tr>
 
-                <xsl:for-each select="empresa_vending/clientes/cliente">
+                <xsl:for-each select="VendinGal/clientes/cliente">
                 <tr>
                     <td><xsl:value-of select="nombre_cliente"/></td>
                     <td><xsl:value-of select="direccion"/></td>
@@ -50,8 +55,10 @@
                 </tr>
                 </xsl:for-each> 
             </table>
+            </div>
 
             <h2>Máquinas en propiedad</h2>
+            <div class="tabla">
             <table border="0">
                 <tr>
                     <th>Tipo</th>
@@ -61,7 +68,7 @@
                     <th>Número de serie</th>
                 </tr>
 
-                <xsl:for-each select="empresa_vending/maquinas_propiedad/maquina">
+                <xsl:for-each select="VendinGal/maquinas_propiedad/maquina">
                 <tr>
                     <td><xsl:value-of select="tipo"/></td>
                     <td><xsl:value-of select="marca"/></td>
@@ -71,8 +78,10 @@
                 </tr>
                 </xsl:for-each>
             </table>
+            </div>
 
             <h2>Recambios</h2>
+            <div class="tabla">
             <table border="0">
                 <tr>
                     <th>Pieza</th>
@@ -81,7 +90,7 @@
                     <th>Precio</th>
                 </tr>
 
-                <xsl:for-each select="empresa_vending/recambios/recambio">
+                <xsl:for-each select="VendinGal/recambios/recambio">
                 <tr>
                     <td><xsl:value-of select="pieza"/></td>
                     <td><xsl:value-of select="marca"/></td>
@@ -90,7 +99,8 @@
                 </tr>
                 </xsl:for-each>
             </table>
-           
+            </div>
+           </div>
         </body>
 
     </html>
