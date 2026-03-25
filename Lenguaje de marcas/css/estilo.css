@@ -11,12 +11,14 @@
             }
 
             h1 {
-                margin-bottom: 20px;
+                margin-top: 20px;
             }
-           /*  h2 {
-                color: #4A5B8F;
+
+            h2 {
+                /* color: #4A5B8F; */
+                margin-top: 40px;
                 
-            } */
+            }
             
             head {
                 color: orange;

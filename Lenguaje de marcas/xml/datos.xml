@@ -46,7 +46,7 @@
         </cliente>
     </clientes>
 
-    <maquinas>
+    <maquinas_propiedad>
         <maquina id_maquina="MAQ_101" cliente_ref="CLI_001">
             <tipo>Cafetera</tipo>
             <marca>Necta</marca>
@@ -76,7 +76,7 @@
             <num_serie>NE-20241220</num_serie>
             <!-- <ubicacion>Norvento Enerxía</ubicacion> -->
         </maquina>
-    </maquinas>
+    </maquinas_propiedad>
 
     <recambios>
         <recambio id_recambio="REC_001">

@@ -61,7 +61,7 @@
                     <th>Número de serie</th>
                 </tr>
 
-                <xsl:for-each select="empresa_vending/maquinas/maquina">
+                <xsl:for-each select="empresa_vending/maquinas_propiedad/maquina">
                 <tr>
                     <td><xsl:value-of select="tipo"/></td>
                     <td><xsl:value-of select="marca"/></td>

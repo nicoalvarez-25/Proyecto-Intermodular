@@ -1,5 +1,6 @@
 {
     "empresa_vending": {
+
       "empleados": [
         {
             "id_empleado": "EMP_01" ,
@@ -28,32 +29,97 @@
 
         "clientes": [
             {
-                "id_cliente": "" ,
-                "nombre": "" ,
-                "dirección": "" ,
-                "numero_maquinas": "" ,
-                "facturacion_media": "" 
+                "id_cliente": "CLI_001" ,
+                "nombre_cliente": "Albergue San Antonio" ,
+                "dirección": "Calle Azucena 25, Portomarín, Lugo" ,
+                "numero_maquinas": "1" ,
+                "facturacion_media": "350€" 
             },
 
              {
-                "id_cliente": "" ,
-                "nombre": "" ,
-                "dirección": "" ,
-                "numero_maquinas": "" ,
-                "facturacion_media": "" 
+                "id_cliente": "CLI_002" ,
+                "nombre_cliente": "Talleres López" ,
+                "dirección": "Calle Panaderos 14, Polígono del Ceao, Lugo" ,
+                "numero_maquinas": "1" ,
+                "facturacion_media": "600€" 
             },
 
              {
-                "id_cliente": "" ,
-                "nombre": "" ,
-                "dirección": "" ,
-                "numero_maquinas": "" ,
-                "facturacion_media": "" 
+                "id_cliente": "CLI_003" ,
+                "nombre_cliente": "Norvento Enerxía" ,
+                "dirección": "Calle Ramón María 7, Polígono de As Gandaras, Lugo" ,
+                "numero_maquinas": "2" ,
+                "facturacion_media": "1300€" 
+            }
+        ],
+
+        "maquinas_propiedad": [
+            {
+                "id_maquina": "MAQ_101" ,
+                "cliente_ref": "CLI_001" ,
+                "tipo": "Cafetera" ,
+                "marca": "Necta" ,
+                "modelo": "Barista 200" , 
+                "año": "2020" ,
+                "num_serie": "NE-20200509" 
+            },
+
+            {
+                "id_maquina": "MAQ_102" ,
+                "cliente_ref": "CLI_002" ,
+                "tipo": "Cafetera" ,
+                "marca": "Gaggia" ,
+                "modelo": "Krea G300" , 
+                "año": "2025" ,
+                "num_serie": "GA-20251214" 
+            },
+
+            {
+                "id_maquina": "MAQ_103" ,
+                "cliente_ref": "CLI_003" ,
+                "tipo": "Cafetera" ,
+                "marca": "Necta" ,
+                "modelo": "Barista 1000 Touch" , 
+                "año": "2026" ,
+                "num_serie": "NE-20260125" 
+            },
+
+            {
+                "id_maquina": "MAQ_104" ,
+                "cliente_ref": "CLI_003" ,
+                "tipo": "Expendedora" ,
+                "marca": "Necta" ,
+                "modelo": "Gusto 8 Pro Touch" , 
+                "año": "2024" ,
+                "num_serie": "NE-20241220" 
+            }
+        ],
+
+        "recambios": [
+            {
+                "id_recambio": "REC_001" ,
+                "pieza": "Monedero" ,
+                "marca": "NRI" ,
+                "num_referencia": "NR-202510" ,
+                "precio": "300€" 
+            },
+
+             {
+                "id_recambio": "REC_002" ,
+                "pieza": "Grupo de café" ,
+                "marca": "Necta" ,
+                "num_referencia": "NE-202412" ,
+                "precio": "200€" 
+            },
+
+             {
+                "id_recambio": "REC_003" ,
+                "pieza": "Billetero" ,
+                "marca": "Coges" ,
+                "num_referencia": "CG-202505" ,
+                "precio": "250€" 
             }
         ]
-
-
-
 
     }
     

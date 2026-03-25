@@ -1,4 +1,4 @@
-<!ELEMENT empresa_vending (empleados, clientes, maquinas, recambios)>
+<!ELEMENT empresa_vending (empleados, clientes, maquinas_propiedad, recambios)>
 
 <!ELEMENT empleados (empleado+)>
 <!ELEMENT empleado (nombre, edad, puesto, sueldo)>
@@ -18,7 +18,7 @@
 <!ELEMENT numero_maquinas (#PCDATA)>
 <!ELEMENT facturacion_media (#PCDATA)>
 
-<!ELEMENT maquinas (maquina+)>
+<!ELEMENT maquinas_propiedad (maquina+)>
 <!ELEMENT maquina (tipo, marca, modelo, año, num_serie)>
 <!ATTLIST maquina id_maquina ID #REQUIRED cliente_ref IDREF #REQUIRED>
 
