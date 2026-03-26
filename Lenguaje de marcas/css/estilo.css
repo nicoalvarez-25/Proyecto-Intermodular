@@ -2,12 +2,18 @@
             * {
                 font-family: Arial, sans-serif;
                 box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                margin: 0;
+                width: 100%;
             }
 
             body {
                 background-color: #C7E6F0;
                 margin: 0;
-                padding: 20px;
             }
 
             body > div {
@@ -24,7 +30,29 @@
                 color: #4A5B8F;
                 background-color: #F79F72;
                 padding: 15px;
-                margin-top: 0;
+                margin: 0;
+                text-align: center;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                background-color: rgb(247, 244, 244);
+                margin-bottom: 40px;
+            }
+
+            li {
+                display: inline-block;
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+                padding: 20px;
+                color: #4A5B8F;
+                font-weight: bold;
             }
 
             h2 {
@@ -32,6 +60,7 @@
                 background-color: #C7E6F0;
                 margin-top: 40px;
                 padding: 10px;
+                text-align: center;
             }
             
             .tabla {
@@ -60,5 +89,14 @@
                 text-align: center;
                 padding: 7px;
                 border: 1px solid #C7E6F0;
+            }
+
+            footer {
+                background-color: #F79F72;
+                text-align: center;
+                color: #4A5B8F;
+                font-weight: bold;
+                padding: 30px;
+                margin-top: 40px;
             }
          

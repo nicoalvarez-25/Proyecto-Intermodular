@@ -8,12 +8,21 @@
             <link rel="stylesheet" href="../css/estilo.css"/>
         </head>
 
-        <body> 
-
-            <div>
+        <body>
+            <header>
             <h1>VendinGal</h1>
+            <nav>
+                <ul>
+                <li><a href="#empleados">Empleados</a></li>
+                <li><a href="#clientes">Clientes</a></li>
+                <li><a href="#maquinas">Máquinas en propiedad</a></li>
+                <li><a href="#recambios">Recambios</a></li>
+                </ul>
+            </nav>
+            </header> 
+           <div>
            
-            <h2>Empleados</h2>
+            <h2 id="empleados">Empleados</h2>
 
             <div class="tabla">
             <table border="0">
@@ -36,7 +45,7 @@
             </table>
             </div>
 
-            <h2>Clientes</h2>
+            <h2 id="clientes">Clientes</h2>
             <div class="tabla">
             <table border="0">
                 <tr>
@@ -57,7 +66,7 @@
             </table>
             </div>
 
-            <h2>Máquinas en propiedad</h2>
+            <h2 id="maquinas">Máquinas en propiedad</h2>
             <div class="tabla">
             <table border="0">
                 <tr>
@@ -80,7 +89,7 @@
             </table>
             </div>
 
-            <h2>Recambios</h2>
+            <h2 id="recambios">Recambios</h2>
             <div class="tabla">
             <table border="0">
                 <tr>
@@ -101,6 +110,10 @@
             </table>
             </div>
            </div>
+
+           <footer>
+                <p>© 2026 VendinGal | Todos los derechos reservados</p>
+           </footer>
         </body>
 
     </html>
